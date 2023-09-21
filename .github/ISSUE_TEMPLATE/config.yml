@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Signalez les problèmes et les vulnérabilités liés à la duplication.
+    url: https://discord.gg/remainsky
+    about: Merci de ne pas signaler les problèmes de duplication sur GitHub !
+  - name: Notre discord
+    url: https://discord.gg/remainsky
+    about: Le discord du serveur RemainSky

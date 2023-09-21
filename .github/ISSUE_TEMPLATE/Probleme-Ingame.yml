@@ -1,0 +1,82 @@
+name: Report de bug
+description: Formulaire de report de bug in-game
+title: "[BUG] "
+labels: 
+  - Issue
+assignees:
+  - NewZAZ
+body:
+  - type: checkboxes
+    id: searched
+    attributes:
+      label: Confirmation
+      options:
+        - label: "J'ai vérifié que le bug n'a pas déjà été signalé."
+          required: true
+        - label: "Le bug que je signale n'est pas lié à la duplication (Ticket discord pour cela)"
+          required: true
+  - type: input
+    id: pseudo
+    attributes:
+      label: Votre pseudo en jeu
+    validations:
+      required: true
+  - type: input
+    id: discord
+    attributes:
+      label: Votre pseudo discord
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Que s'est-il passé ?
+      description: Merci de faire une description claire du problème.
+    validations:
+      required: true
+  - type: textarea
+    id: step_to_reproduce
+    attributes:
+      label: Comment reproduire le bug ?
+      description: 1. Faire '...', 2. Jeter un objet sur '...' etc...
+    validations:
+      required: true
+  - type: textarea
+    id: what-should-happened
+    attributes:
+      label: "Qu'aurait-il dû arriver ?"
+      description: "Une description claire de ce qu'il doit normalement se passer."
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: "Date et heure de l'apparition problème"
+      description: "XX/XX/XX à XXHXX"
+    validations:
+      required: true
+  - type: dropdown
+    id: server
+    validations:
+      required: true
+    attributes:
+      label: Serveur
+      multiple: true 
+      options:
+        - Skyblock
+        - Hub
+        - Event
+  - type: textarea
+    id: video-screen
+    attributes:
+      label: 'Screen / vidéo'
+      description: "Si besoin, ajoutez des captures d'écran et/ou vidéos pour expliquer votre problème."
+    validations:
+      required: false
+  - type: textarea
+    id: more-info
+    attributes:
+      label: 'Informations complémentaires'
+      description: 'Ajoutez ici toutes autres informations liées au problème reporté.'
+    validations:
+      required: false
